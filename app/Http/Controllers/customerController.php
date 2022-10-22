@@ -47,11 +47,11 @@ class CustomerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    // public function store(Request $request)
-    // {
-    //     $customer = Customer::create($request->all());
-    //     return response()->json($customer);
-    // } 
+    public function store(Request $request)
+    {
+        $customer = Customer::create($request->all());
+        return response()->json($customer);
+    } 
 
     /**
      * Display the specified resource.
